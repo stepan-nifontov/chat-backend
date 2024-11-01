@@ -40,6 +40,6 @@ jobs:
           debug: true
           script: |
             docker pull steve2ekb/my_chat_backend:latest
-            docker stop my-chat-backend || true
+            docker stop my-chat-app-backend || true
             docker rm my-chat-app-backend || true
             docker run -d --name my-chat-app-backend -p 3000:3000 steve2ekb/my_chat_backend:latest

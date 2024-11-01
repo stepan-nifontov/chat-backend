@@ -39,7 +39,7 @@ jobs:
           port: 22
           debug: true
           script: |
-            docker pull steve2ekb/my_chat:latest
+            docker pull steve2ekb/my-chat-backend:latest
             docker stop my-chat-backend || true
             docker rm my-chat-app-backend || true
             docker run -d --name my-chat-app-backend -p 3000:3000 steve2ekb/my_chat_backend:latest

@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get('/api', (req, res) => {
-  res.send('Hello from the backend!');
+  res.send('TEST!');
 });
 
 app.listen(PORT, () => {
